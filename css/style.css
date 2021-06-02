@@ -1,0 +1,810 @@
+:root {
+    --basic-black:#000000;
+    --basic-white:#ffffff;
+    --basic-red:#ee3643;
+    --basic-green:#63a63e;
+    --basic-grey:#32425c;
+    --basic-greylight:#c5c5c5;
+    --basic-background:#f1f5f7;
+    --special-background:#f9f5f0;
+    --special-yellow:#ffbf47;
+    --special-blue:#3bbce3;
+    --special-lilac:#dc91d8;
+    --special-greenlight:#8ed78f;
+    --special-yellowlight:#ffd180;
+    --special-green:#5fbb2d;
+    --special-anotheryellow:#ffbf47;
+    --special-red:#ba2732;
+    --special-like-my-blood-red:#ca2c37;
+    --special-grey:#293449;
+    --special-lightgrey:#a9a9a9;
+    --special-dark-grey:#161d29;
+    --special-border-grey:#eaeaea;
+    --special-darkest-then-my-life-grey:#1d2739;
+    --special-modal-background:#f4f4f4;
+    --special-catalog-background:#f7f3ec;
+    --special-catalog-button-shadow:#367315;
+    --special-catalog-button-shadow-a:#518534;
+    --special-bread-border:#e5e5e5;
+    --special-white-opacity:rgba(255, 255, 255,0.3);
+    --special-lightgrey-opacity:rgba(197, 197, 197,0.3);
+    --special-grey-opacity:rgba(169, 169, 169,0.3);
+
+}
+body{
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight:400;
+    color:var(--basic-white);
+    background-color: var(--basic-white);
+}
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+.header{
+    background-color:var(--basic-background);
+}
+.search{
+    background-color:var(--special-grey);
+    color: var(--basic-white);
+}
+.search:hover{
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+}
+.user-menu{
+    background-color: var(--special-grey);
+}
+.user-list{
+    list-style: none;
+}
+.user-item a{
+    color: var(--basic-white);
+    text-decoration: none;
+}
+/*Сделать действие когда добавятся иконки!
+ а также смена фона у логотипа при клике! значит что надо переделать лого!
+.user-item a:hover,
+.user-item a:focus{
+
+}
+*/
+.user-item:last-child a{
+    background-color: var(--basic-green);
+}
+.user-item a:active{
+    opacity: 50%;
+}
+.user-item:nth-child(1):active,
+.user-item:nth-child(2):active{
+    background-color: var(--special-dark-grey);
+}
+.about{
+    line-height: 23px;
+    font-size: 16px;
+    font-style: italic;
+    color: var(--special-red);
+}
+.header-contacts{
+    line-height: 24px;
+    font-size: 14px;
+    color: var(--basic-grey);
+}
+.header-phone{
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--basic-red);
+}
+.login-link{
+    text-decoration: none;
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+    font-size: 21px;
+    line-height: 21px;
+}
+.registration-link{
+    text-decoration: none;
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+    font-size: 21px;
+    line-height: 21px;
+}
+/* не забыть про иконку*/
+.login-link:hover,
+.login-link:focus,
+.registration-link:focus,
+.registration-link:hover{
+    color: var(--basic-red);
+}
+.registration-link:active,
+.login-link:active{
+color: var(--basic-greylight);
+}
+.header-navigation{
+    background-color: var(--basic-grey);
+}
+.navigation-list{
+    list-style: none;
+}
+.navigation-item a{
+    text-decoration: none;
+    color: var(--basic-white);
+}
+.navigation-item a:hover,
+.navigation-item a:focus{
+    background-color: var(--special-grey);
+}
+.navigation-item a:active{
+    background-color: var(--special-darkest-then-my-life-grey);
+    opacity: 50%;
+}
+.container{
+    background-color: var(--basic-white);
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.offers-list{
+    list-style: none;
+}
+.offers-item:nth-child(1),
+.offers-item:nth-child(5){
+background-color: var(--special-yellow);
+}
+.offers-item:nth-child(2){
+    background-color: var(--special-blue);
+}
+.offers-item:nth-child(3){
+    background-color: var(--special-lilac);
+}
+.offers-item:nth-child(4){
+    background-color: var(--special-greenlight);
+}
+.offers-item:nth-child(6){
+    width: 620px;
+    height: 266px;
+    background-image: url(../img/manwithperforator.jpg);
+    background-repeat: no-repeat;
+}
+.offers-item:nth-child(7){
+    width: 620px;
+    height: 266px;
+    background-image: url(../img/manwithdrill.jpg);
+    background-repeat: no-repeat;
+}
+.offers-item:nth-child(6) h3,
+.offers-item:nth-child(7) h3{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.offers-item a{
+    text-decoration: none;
+    color: var(--basic-white);
+    background-color:var(--special-white-opacity);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.offers-item a:hover,
+.offers-item a:focus{
+    background-color: var(--special-lightgrey-opacity);
+}
+.offers-item a:active{
+    background-color:var(--special-grey-opacity);
+}
+.offers-item h3{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.offers-item .button{
+    background-color: var(--basic-red);    
+}
+.offers-item .button:hover,
+.offers-item .button:focus{
+    background-color:var(--special-like-my-blood-red);
+}
+.offers-item .button:active{
+    background-color: var(--special-red);
+}
+
+.button{
+    background-color: var(--basic-red);
+    text-transform: uppercase;
+    
+}
+
+.button:focus,
+.button:hover{
+    background-color:var(--special-like-my-blood-red);
+}
+.button:active{
+    background-color: var(--special-red);}
+
+.back{
+    background-color:var(--special-background);
+}
+.popular-goods h2{
+    color: var(--basic-grey);
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.popular-goods a{
+    text-decoration: none;
+    color: var(--basic-white);
+}
+.goods-list{
+    list-style: none;
+}
+.goods-item a{
+    text-decoration: none;
+}
+.goods-item h3{
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: var(--basic-black);
+    text-decoration: none;
+}
+.goods-item p:first-of-type{
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: var(--special-lightgrey);
+    text-decoration: line-through;
+}
+.goods-button{
+    display: inline-block;
+    position: relative;
+    width: 122px;
+    height: 38px;
+    font-family:"PT Sans",Arial,sans-serif;
+    text-align: center;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    border: none;
+    border-radius: 2px 0 0 2px;
+
+}
+.goods-button::after{
+    content:'';
+    position: absolute;
+    top:0;
+    right: -19px;
+    width: 38px;
+    height:38px;
+    background-color:var(--basic-red);
+    border-radius: 50px 0 0 0;
+    transform: rotate(-45deg) scale(0.7050);
+}
+.popular-brands h2{
+    color: var(--basic-grey);
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.popular-brands a{
+    text-decoration: none;
+    color: var(--basic-white);
+}
+.brands-list{
+    list-style: none;
+}
+.brands-item{
+    display: flex;
+    width: 220px;
+    height: 145px;
+    margin: 20px;
+    box-sizing: border-box;
+    border: 1px solid var(--special-border-grey);
+    align-items: center;
+    justify-content: center;
+}
+.brands-item:hover,
+.brands-item:focus{
+box-shadow:0 4px 20px 0 var(--special-border-grey);
+}
+.brands-item:active{
+    box-shadow:0 4px 20px 0 var(--special-border-grey);
+    opacity: 0.5;
+}
+.services{
+    background-color:var(--basic-background);
+}
+.services h2{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+.services p{
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-black);
+}
+.services h3{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color:var(--basic-grey);
+}
+.services a{
+    text-decoration: none;
+    color: var(--basic-white);
+}
+.services-list{
+    list-style: none;
+}
+.services-button{
+    font-size: 21px;
+    line-height: 31px;
+    color: var(--basic-white);
+    background-color:var(--basic-grey);
+}
+.services-button:focus,
+.services-button:hover{
+    font-size: 21px;
+    line-height: 31px;
+    color: var(--basic-white);
+    background-color:var(--special-grey);
+}
+.services-button:active{
+    font-size: 21px;
+    line-height: 31px;
+    color:var(--basic-grey);
+    background-color:var(--basic-white);
+}
+
+.about-company h2{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+.about-company p{
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-black);
+}
+.about-company a{
+    text-decoration: none;
+    color: var(--basic-white);
+}
+.about-company button{
+    color: var(--basic-white);
+}
+.delivery-list{
+    list-style:none;
+}
+
+.delivery-list li{
+    color: var(--basic-black);
+}
+.footer{
+    background-color: var(--basic-grey);
+}
+.footer-phone{
+    text-decoration: none;
+    color: var(--basic-white);
+}
+.footer-menu,
+.footer-to-goods{
+    list-style: none;
+}
+.footer-menu a,
+.footer-to-goods a{
+    text-decoration: none;
+}
+.footer-menu a{
+    color: var(--basic-white);
+}
+.footer-to-goods a{
+    color:var(--special-yellowlight);
+}
+.footer-menu a:hover,
+.footer-to-goods a:hover,
+.footer-menu a:focus,
+.footer-to-goods a:focus{
+    text-decoration: underline;
+}
+.footer-menu a:active,
+.footer-to-goods a:active{
+opacity: 0.5;
+text-decoration: none;
+}
+.footer-back{
+    background-color:var(--special-grey);
+}
+.footer-back p{
+    font-size: 16px;
+    line-height: 18px;
+}
+.developers a{
+    text-decoration: none;
+    color: var(--special-yellowlight);
+}
+.developers a:hover,
+.developers a:focus{
+    text-decoration:underline;
+}
+.developers a:active{
+    text-decoration: none;
+    color:var(--basic-red);
+}
+.social-list{
+    list-style: none;
+}
+.social-logo{
+    text-decoration: none;
+
+}
+.social-logo:hover path:first-of-type,
+.social-logo:focus path:first-of-type,
+.social-logo:active path:first-of-type{
+    fill:var(--basic-red);
+}
+.letter-form p{
+    color: var(--basic-black);
+    font-size: 18px;
+    line-height: 24px;
+}
+.letter-login::placeholder,
+.letter-email::placeholder,
+.letter-letter::placeholder{
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.letter-form p:last-of-type{
+    background-color:var(--special-modal-background);
+}
+/*каталог!*/
+.header-about .user-name{
+    text-decoration: none;
+    color: var(--basic-black);
+    font-size: 21px;
+    line-height: 21px;
+    background-color: var(--basic-white);
+}
+.header-about .user-name:active{
+    color: var(--basic-greylight);
+}
+.user-account{
+    list-style: none;
+}
+.account-item a{
+    text-decoration: none;
+    color:var(--basic-grey);
+    font-size: 16px;
+    line-height: 18px;
+
+}
+.account-item a:hover,
+.account-item a:focus{
+    color: var(--basic-red);
+}
+.account-item a:active{
+    color: var(--basic-greylight);
+}
+.breadcrumbs-list-up{
+    list-style: none;
+}
+.breadcrumbs-up{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.tittle{
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-grey);
+    text-transform: uppercase;
+    background-color:var(--basic-background);
+}
+.filter h2{
+    text-transform: uppercase;
+    color: var(--basic-black);
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    background-color:var(--special-catalog-background);
+}
+.legend-name{
+    text-transform: uppercase;
+    color: var(--basic-black);
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.field{
+    border-top: none;
+    border-right: none;
+    border-left:none ;
+    border-color:var(--special-border-grey);
+}
+.field:last-of-type{
+    border: none;
+}
+.field ul{
+    list-style: none;
+}
+.change-price li{
+    background-color:var(--special-catalog-background);
+}
+.min-max-price{
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-black);
+}
+.field label{
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 400;
+    color: var(--basic-black);
+}
+.brands-change-input{
+    position: absolute;
+	z-index: -1;
+	opacity: 0;	
+}
+.brands-change-input + label{
+    position: relative;
+    padding-left: 0px;
+}
+.brands-change-input + label::before{
+    content:url(../img/checkbox-off.svg);
+    position:absolute;
+    left: -30px;
+}
+
+.brands-change-input:hover + label::before,
+.brands-change-input:focus + label::before{
+    content:url(../img/checkbox-off-hover.svg);
+}
+.brands-change-input:checked + label::before{
+    content:url(../img/checkbox-on.svg);
+    position:absolute;
+    left: -30px;
+}
+.brands-change-input:checked:hover + label::before,
+.brands-change-input:checked:focus + label::before{
+content:url(../img/checkbox-on-hover.svg);
+}
+.brands-change-input:disabled + label::before{
+   opacity: 0.3;
+}
+
+.power-change-input{
+    position: absolute;
+	z-index: -1;
+	opacity: 0;	
+}
+.power-change-input + label{
+    position: relative;
+}
+.power-change-input + label::before{
+    content:url(../img/radio-off.svg);
+    position: absolute;
+    left: -30px;
+}
+.power-change-input:hover + label::before,
+.power-change-input:focus + label::before{
+    content: url(../img/radio-off-hover.svg);
+}
+.power-change-input:checked + label::before{
+    content:url(../img/radio-on.svg);
+    position: absolute;
+    left: -30px;
+}
+.power-change-input:checked:hover + label::before,
+.power-change-input:checked:focus + label::before{
+    content:url(../img/radio-on-hover.svg);
+    position: absolute;
+    left: -30px;
+}
+.power-change-input:disabled + label::before{
+    opacity: 0.3;
+}
+
+.filter-button{
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-black);
+}
+.sort h2{
+    text-transform: uppercase;
+    color: var(--basic-black);
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    background-color:var(--special-catalog-background);
+}
+.sort-list{
+    list-style: none;
+    background-color: var(--special-catalog-background);
+}
+
+.sort-item .not-active-sort{ 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-black);
+    opacity: 0.3;
+    border-bottom: 1px dotted var(--basic-red);
+}
+/*поработать над этим позже,спросить Бориса*/
+.sort-item .not-active-sort:hover,
+.sort-item .not-active-sort:focus{
+    text-transform: uppercase;
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-black);
+    opacity: 1;
+    border-bottom: 1px solid var(--basic-red);
+} 
+.sort-item  .active-sort{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-red);
+}
+
+
+.active-triangle path{
+    fill: var(--basic-red);
+}
+.sort-item .down{
+    transform: rotate(180deg);
+}
+.sort-item .down:focus path,
+.sort-item .down:hover path,
+.sort-item .up:hover path,
+.sort-item .up:focus path{
+fill: var(--basic-black);
+}
+.catalog-button-buy{
+    width: 135px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: var(--basic-green);
+    color: var(--basic-white);
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 3px 0 0 var(--special-catalog-button-shadow);
+}
+.catalog-button-buy:hover,
+.catalog-button-buy:focus{
+    background-color:var(--special-green);
+}
+.catalog-button-buy:active{
+    background-color: var(--special-catalog-button-shadow-a);
+}
+.catalog-button-bookmark{
+    width: 135px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 18px;
+    background-color:var(--basic-white);
+    color:var(--basic-grey);
+    border:3px solid var(--basic-green);
+    border-radius: 2px;
+}
+.catalog-button-bookmark:hover,
+.catalog-button-bookmark:focus{
+    border:3px solid var(--basic-grey);
+}
+.catalog-button-bookmark:active{
+    opacity: 0.3;
+}
+.breadcrumbs-list-down{
+    list-style: none;
+}
+.breadcrumbs-down{
+    display: inline-block;
+    text-transform: uppercase;
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-black);
+    border: 1px solid var(--special-bread-border);
+    border-radius: 2px;
+    text-decoration: none;
+}
+.active-page{
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+.breadcrumbs-down:focus,
+.breadcrumbs-down:hover{
+    border: 1px solid var(--basic-greylight);
+}
+.breadcrumbs-down:active{
+    border: 1px solid var(--basic-red);
+}
+.few-info{
+    background-color: var(--basic-background);
+}
+.few-info h2{
+    color: var(--basic-black);
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 130px;
+}
+.few-info p{
+    font-family:"PT Sans",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-black);
+    margin-left: 130px;
+}
+.modal-goods h2{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: var(--basic-black);
+}
+.modal-goods .button{
+    color: var(--basic-white);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: var(--basic-red);
+    border: none;
+}
+.modal-goods .next{
+    color: var(--basic-black);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: var(--basic-white);
+    border: none;
+}
+.modal-bottom{
+    background-color: var(--basic-background);
+}
