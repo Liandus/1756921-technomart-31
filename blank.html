@@ -12,73 +12,78 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-<header class="header">
-<section class="user-menu">
-  <h2 class="visually-hidden">
-    Меню пользователя
-  </h2>
-  <a href="#" class="logo"><img src="img/logo.png" width="220" height="47" alt="Логотип компании Техномарт, белые буквы на красном фоне"></a>
-  <br>
-  <input class="search" type="search" placeholder="Поиск:">
-  <ul class="user-list">
-    <li class="user-item">
-      <a class="user-link" href="#">Список</a>
-    </li>
-    <li class="user-item">
-      <a class="user-link" href="#">Корзина</a>
-    </li>
-    <li class="user-item">
-      <a class="user-link" href="#">Оформить заказ</a>
-    </li>
-  </ul>
-
-</section>
-<section class="header-about">
-<h2 class="visually-hidden">О магазине</h2>
-<p class="about">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
-<p class="header-contacts">
-<a class="header-phone" href="tel:=78005552628">+7-800-555-26-29</a>
-г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
-
-</p>
-<a class="login-link" href="#">Войти</a>
-<a class="registration-link" href="#">Регистрация</a>
-
-</section>
-<h2 class="visually-hidden">Меню сайта</h2>
-  <nav class="header-navigation">
-<ul class="navigation-list">
-<li class="navigation-item">
-  <a class="navigation-link" href="index.html">Главная</a>
-</li>
-<li class="navigation-item">
-  <a class="navigation-link" href="blank.html">Компания</a>
-</li>
-<li class="navigation-item">
-  <a  class="navigation-link" href="catalog.html">Каталог</a>
-</li>
-<li class="navigation-item">
-  <a  class="navigation-link" href="blank.html">Новости</a>
-</li>
-<li class="navigation-item">
-  <a class="navigation-link" href="blank.html">Спецпредложения</a>
-</li>
-<li class="navigation-item">
-  <a class="navigation-link" href="blank.html">Доставка</a>
-</li>
-<li class="navigation-item">
-  <a class="navigation-link" href="blank.html">Контакты</a>
-</li>
-
-
-</ul>
-
-  </nav>
-</header>
+    <header class="header">
+      <div class="user-menu-bar">
+      <section class="user-menu">
+        <h2 class="visually-hidden">
+          Меню пользователя
+        </h2>
+        <!-- сделать потом правильное логов свг! и применить  стили при клике! пока так сойдет -->
+        <a href="#" class="logo"><img src="img/logo.png" width="220" height="47" alt="Логотип компании Техномарт, белые буквы на красном фоне"></a>
+        <input class="search" type="search" placeholder="Поиск:">
+        <ul class="user-list">
+          <li class="user-item">
+            <a class="user-link" href="#">Список</a>
+          </li>
+          <li class="user-item">
+            <a class="user-link" href="#">Корзина</a>
+          </li>
+          <li class="user-item">
+            <a class="user-link" href="#">Оформить заказ</a>
+          </li>
+        </ul>
+      
+      </section>
+      </div>
+      <section class="header-about">
+      <h2 class="visually-hidden">О магазине</h2>
+      <p class="about">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
+      <p class="header-contacts">
+      <a class="header-phone" href="tel:=78005552628">+7-800-555-26-29</a><br>
+      
+      г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
+      </p>
+      <a class="login-link" href="#">Войти</a>
+      <a class="registration-link" href="#">Регистрация</a>
+      
+      </section>
+      
+      <nav class="header-navigation">
+        <h2 class="visually-hidden">Меню сайта</h2>
+      <ul class="navigation-list">
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Главная</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="blank.html">Компания</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="catalog.html">Каталог</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="blank.html">Новости</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="blank.html">Спецпредложения</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="blank.html">Доставка</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="blank.html">Контакты</a>
+      </li>
+      
+      
+      </ul>
+      
+        </nav>
+        
+      </header>
 <main>
     <h1>здесь что то будет возможно) </h1>
 </main>
 <footer class="footer">
+  <div class="footer-menu-wraper">
   <section class="where-info">
     <h2>Где нас искать?</h2>
     <a class="logo" href="#"><img src="img/logo.png" width="220" height="47" alt="Логотип компании Техномарт, белые буквы на красном фоне"></a>
@@ -101,9 +106,12 @@
       <li class="footer-to-goods-item"><a class="goods-link" href="#">Спецпредложения</a></li>
   
     </ul>
+  
   </section>
+  </div>
   <div class="footer-back">
-  <section class="copyright">
+    <div class="footer-bottom-wraper">
+    <section class="copyright">
     <h2 class="visually-hidden">Копирайт</h2>
     <p>© 2010–2021 Компания «Техномарт»</p>
     <p>Все права защищены</p>
@@ -126,13 +134,14 @@
       <h2 class="visually-hidden">Разработчик сайта</h2>
       <p>
         Обратная связь:<br>
-        <a  class="developers-link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="developers-link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
       <p>
-        Разработано:<br>
+        Разработано-<br>
         <a class="developers-link" href="https://htmlacademy.ru">htmlacademy.ru</a>
       </p>
     </section>
+    </div>
   </div>
   </footer>
 </body>
