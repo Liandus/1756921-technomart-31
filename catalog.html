@@ -12,25 +12,29 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-<header class="header">
+<header class="header-catalog">
   <div class="user-menu-bar">
-<section class="user-menu">
-  <h2 class="visually-hidden">
-    Меню пользователя
-  </h2>
-  <a class="logo" href="index.html"><img src="img/logo.png" width="220" height="47" alt="Логотип компании Техномарт, белые буквы на красном фоне"></a>
-  <input class="search" type="search" placeholder="Поиск:">
-  <ul class="user-list">
-    <li class="user-item">
-      <a class="user-link" href="#">Закладки:0</a>
-    </li>
-    <li class="user-item">
-      <a class="user-link" href="#">Корзина:0</a>
-    </li>
-    <li class="user-item">
-      <a class="user-link" href="#">Оформить заказ</a>
-    </li>
-  </ul>
+    <section class="user-menu">
+      <h2 class="visually-hidden">
+        Меню пользователя
+      </h2>
+      <a href="#" class="logo"><svg width="108" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M103.85 2.66v14.79h-2.12V2.65h-3.75V1.03h9.62v1.64h-3.75zm-8.14 8.7c-.37.46-.83.79-1.38.98-.56.2-1.22.3-1.99.3A11.97 11.97 0 0190 12.4v5.05h-2.12V1.25c.6-.17 1.2-.3 1.8-.36.6-.07 1.25-.11 1.96-.11.94 0 1.74.1 2.4.3.65.19 1.18.51 1.59.97.4.45.7 1.05.9 1.8.18.76.27 1.69.27 2.8 0 1.14-.09 2.1-.27 2.86a4.62 4.62 0 01-.82 1.85zm-1.2-6.82a3.3 3.3 0 00-.55-1.34 2 2 0 00-.95-.7 4.2 4.2 0 00-1.37-.2H90V11h1.64c.53 0 .99-.07 1.37-.2a2 2 0 00.95-.7c.25-.33.44-.77.55-1.34.12-.56.18-1.26.18-2.11 0-.85-.06-1.55-.18-2.11zM82.6 13.22h-4.7l-1.05 4.23h-2.12l4-16.43h3.05l3.99 16.43h-2.11l-1.06-4.23zm-2.3-9.86h-.1l-1.94 8.22h3.99L80.3 3.36zM70.16 5.24h-.12l-3.4 10.1h-2.12l-3.4-10.1H61l-.7 12.21h-2.12l.94-16.43h2.58l3.83 11.26h.1l3.82-11.26h2.58l.94 16.43h-2.1l-.71-12.2zM54.38 15.92c-.44.65-.97 1.1-1.59 1.37-.61.26-1.32.4-2.12.4s-1.5-.14-2.13-.4a3.69 3.69 0 01-1.58-1.37 7.21 7.21 0 01-1-2.6 20.56 20.56 0 01-.34-4.09c0-1.64.11-3 .34-4.1a7.21 7.21 0 011-2.59c.44-.64.97-1.1 1.58-1.36.62-.27 1.33-.4 2.13-.4.8 0 1.5.13 2.12.4.62.27 1.15.72 1.59 1.36.44.64.77 1.5 1 2.6.22 1.08.34 2.45.34 4.1 0 1.64-.12 3-.34 4.09a7.21 7.21 0 01-1 2.6zM53.36 5.76a8.2 8.2 0 00-.65-2.16c-.26-.53-.58-.9-.94-1.1-.36-.2-.73-.31-1.1-.31-.38 0-.74.1-1.1.3-.36.2-.68.58-.94 1.1a8.2 8.2 0 00-.65 2.17c-.16.9-.25 2.06-.25 3.47 0 1.41.09 2.57.25 3.48.17.9.38 1.63.65 2.16.26.53.58.9.94 1.1.36.2.72.3 1.1.3.37 0 .74-.1 1.1-.3.36-.2.68-.57.94-1.1a8.2 8.2 0 00.65-2.16c.16-.91.24-2.07.24-3.48 0-1.4-.08-2.56-.24-3.47zM40.69 9.94h-4.93v7.51h-2.11V1.02h2.11v7.27h4.93V1.02h2.11v16.43h-2.1V9.94zm-11.15 7.51l-2.94-7.04-2.93 7.04h-2.11L25.08 9 21.9 1.02h2.11l2.58 6.57 2.59-6.57h2.11L28.13 9l3.52 8.45h-2.11zM12.28 1.02h7.99v1.64H14.4v5.4h5.16V9.7H14.4v6.1h5.87v1.65h-7.99V1.02zM6.65 17.45H4.54V2.65H.78V1.03h9.62v1.64H6.65v14.79z" fill="#fff"/></svg></a>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+       <input class="search" type="search" placeholder="Поиск:">
+       <svg class="search-picture" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z" fill="#fff"/></svg>
+      </form>
+      <ul class="user-list">
+        <li class="user-item">
+          <a class="user-link bookmark" href="#">Закладки: 0</a>
+        </li>
+        <li class="user-item cart">
+          <a class="user-link" href="#">Корзина: 0</a>
+        </li>
+        <li class="user-item">
+          <a class="user-link" href="#">Оформить заказ</a>
+        </li>
+      </ul>
+    
 
 </section>
 </div>
@@ -102,38 +106,49 @@
     <h2>Фильтр:</h2>
     <form class="price-brands-form" action="https://echo.htmlacademy.ru" method="GET">
     <fieldset class="field">
-        <legend class="legend-name">
+        <legend class="legend-name legend-name-price">
             Цена:
         </legend>
-        <ul class="change-price">
-        <li><input class="price-change" type="range" min="0" max="30000" step="500"></li>
-        <li><input class="min-max-price" type="text" name="value" id="min-value" placeholder="0"></li>
-        <li><input class="min-max-price" type="text" name="value" id="max-value" placeholder="30000"></li>
-      </ul>    
+      <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar">
+
+            </div>
+
+          </div>
+          <div class="toggle toggle-min" tabindex="0"></div>
+          <div class="toggle toggle-max" tabindex="0"></div>
+        </div>
+        <div class="price-controls">
+          <input type="text" name="min-price" value="0">
+          <input type="text" name="max-price" value="30000">
+        </div>
+      </div>
       </fieldset>
     <fieldset class="field">
-        <legend class="legend-name">
+        <legend class="legend-name legend-name-developers">
             Производители:
         </legend>
         <ul class="brands-change">
-            <li>
-                <input class="brands-change-input" type="checkbox" id="filter-bosh" name="bosh" checked>
+            <li class="brands-change-option">
+                <input class="brands-change-input visually-hidden" type="checkbox" id="filter-bosh" name="bosh" checked>
         <label for="filter-bosh">BOSCH</label>
             </li>
-            <li>
-                <input class="brands-change-input" type="checkbox" id="filter-inter" name="inter">
+            <li class="brands-change-option">
+                <input class="brands-change-input visually-hidden" type="checkbox" id="filter-inter" name="inter">
         <label for="filter-inter">Интерскол</label>
             </li>
-            <li>
-                <input class="brands-change-input" type="checkbox" id="filter-makita" name="makita" checked>
+            <li class="brands-change-option">
+                <input class="brands-change-input visually-hidden" type="checkbox" id="filter-makita" name="makita" checked>
         <label for="filter-makita">Makita</label>
             </li>
-            <li>
-                <input class="brands-change-input" type="checkbox" id="filter-dewalt" name="dewalt">
+            <li class="brands-change-option">
+                <input class="brands-change-input visually-hidden" type="checkbox" id="filter-dewalt" name="dewalt">
         <label for="filter-dewalt">DeWALT</label>
             </li>
-            <li>
-                <input class="brands-change-input" type="checkbox" id="filter-hitachi" name="hitachi">
+            <li class="brands-change-option">
+                <input class="brands-change-input visually-hidden " type="checkbox" id="filter-hitachi" name="hitachi">
         <label for="filter-hitachi">HITACHI</label>
             </li>
 
@@ -142,16 +157,16 @@
 
     </fieldset>
     <fieldset class="field">
-        <legend class="legend-name">
+        <legend class="legend-name legend-name-power">
             Питание:
         </legend>
         <ul class="power-change">
             <li>
-                <input class="power-change-input" type="radio" name="battary" id="battary-filter" checked>
+                <input class="power-change-input visually-hidden" type="radio" name="battary" id="battary-filter" checked>
                 <label for="battary-filter">Аккумуляторные</label>
             </li>
             <li>
-                <input class="power-change-input" type="radio" name="battary" id="wire-filter">
+                <input class="power-change-input visually-hidden" type="radio" name="battary" id="wire-filter">
                 <label for="wire-filter">Сетевые</label>
             </li>
         </ul>
@@ -207,26 +222,25 @@
             <p>30500</p>
             <p><button class="goods-button" type="button">25500</button></p>
           </li>
-          <li class="goods-item">
+          <li class="goods-item goods-item-new">
             
             <a class="goods-link" href="#">
               <h3>Перфоратор BOSCH BFG 6000</h3>
             </a>
-              <!--пока отключу эти кнопки
+            <!--Кнопки здесь-->
+              <div class="goods-buttons-on-hover">
               <p>
-                пока отключу эти кнопки
-                Не забыть что эти кнопки только при наведении и тут должен быть перфоратор
-                <button class="catalog-button-buy" type="button">Купить</button>
+              <button class="catalog-button-buy" type="button">Купить</button>
               </p>
               <p>
                 <button class="catalog-button-bookmark"  type="button">В закладки</button>
               </p>
-            -->
-            <img src="img/6000.jpg" width="144" height="128" alt="Модель 6000 сине-серо-черная с вкраплениями красного,сверло среднее, с аккумулятором">
+            </div>
+            <img class="visually-hidden" src="img/6000.jpg" width="144" height="128" alt="Модель 6000 сине-серо-черная с вкраплениями красного,сверло среднее, с аккумулятором">
             <p>30500</p>
             <p><button class="goods-button" type="button">25500</button></p>
           </li>
-          <li class="goods-item">
+          <li class="goods-item goods-item-new">
             <a class="goods-link" href="#">
               <h3>Перфоратор BOSCH BFG 3000</h3>
             </a>
@@ -242,7 +256,7 @@
             <p>30500</p>
             <p><button class="goods-button" type="button">25500</button></p>
           </li>
-          <li class="goods-item">
+          <li class="goods-item goods-item-new">
             <a class="goods-link" href="#">
               <h3>Перфоратор BOSCH BFG 2000</h3>
             </a>
@@ -250,7 +264,7 @@
             <p>22500</p>
             <p><button class="goods-button" type="button">12500</button></p>
           </li>
-          <li class="goods-item">
+          <li class="goods-item goods-item-new">
             <a class="goods-link" href="#">
               <h3>Перфоратор BOSCH BFG 3000</h3>
             </a>
@@ -266,7 +280,7 @@
             <p>30500</p>
             <p><button class="goods-button" type="button">25500</button></p>
           </li>
-          <li class="goods-item">
+          <li class="goods-item goods-item-new">
             <a class="goods-link" href="#">
               <h3>Перфоратор BOSCH BFG 2000</h3>
             </a>
