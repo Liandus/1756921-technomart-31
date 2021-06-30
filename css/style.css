@@ -103,20 +103,18 @@
     color: var(--basic-white);
     border: none;
 }
-.search::-moz-placeholder{
+.search-form input::-moz-placeholder{
     color:var(--basic-white);
+    opacity: 1;
 }
 .search::placeholder{
     color:var(--basic-white)
 }
-
 .search-picture{
     position: absolute;
     left: 18px;
     bottom:13px;
     opacity:0.3;
-    fill: #518534;
-
 }
 .search:focus,
 .search:active{
@@ -195,9 +193,13 @@
     opacity:0.3;
 
 }
-.bookmark:hover::before,
+.bookmark::before,
 .bookmark:focus::before{
     transition: all 0.3s ease-out;
+
+}
+.bookmark:hover::before,
+.bookmark:focus::before{
     opacity: 1;
 }
 .bookmark:active::before{
@@ -222,9 +224,12 @@
     background-position: 0 0;
     opacity:0.3;
 }
-.cart:hover::before,
+.cart::before,
 .cart:focus::before{
     transition: all 0.3s ease-out;
+}
+.cart:hover::before,
+.cart:focus::before{
     opacity: 1;
 }
 .cart:active::before{
@@ -235,10 +240,13 @@
     padding: 9px 0px 9px 19px;
     background-color: var(--basic-green);
 }
+.user-item:last-child a,
+.user-item:last-child a:focus{
+    transition: all 0.3s ease-out;
+}
 .user-item:last-child a:hover,
 .user-item:last-child a:focus{
     color: var(--special-white-opacity);
-    transition: all 0.3s ease-out;
 }
 .user-item a:active{
     opacity: 50%;
@@ -274,7 +282,7 @@
 }
 .header-phone{
     position: relative;
-    display: inline-block;
+    display:block;
     box-sizing: border-box;
     width: 270px;
     height: 45px;
@@ -329,8 +337,10 @@
     opacity: 0.2;
 
 }
-.login-link:hover::before{
+.login-link::before{
     transition: all 0.3s ease-out;
+}
+.login-link:hover::before{
     opacity: 1;
 }
 .login-link:active::before,
@@ -350,12 +360,16 @@
     padding-top: 12px;
     margin-left: -10px;
 }
-
+.login-link,
+.login-link:focus,
+.registration-link,
+.registration-link:focus{
+    transition: all 0.4s ease-out;
+}
 .login-link:hover,
 .login-link:focus,
-.registration-link:focus,
-.registration-link:hover{
-    transition: all 0.2s ease-out;
+.registration-link:hover,
+.registration-link:focus{
     color: var(--basic-red);
 }
 .registration-link:active,
@@ -395,9 +409,13 @@ color: var(--basic-greylight);
 .navigation-item:last-child{
     margin-right:23px;
 }
-.navigation-item a:hover,
+.navigation-item a,
 .navigation-item a:focus{
     transition: all 0.3s ease-out;
+
+}
+.navigation-item a:hover,
+.navigation-item a:focus{
     background-color: var(--special-grey);
 }
 .navigation-item:active{
@@ -504,10 +522,13 @@ color: var(--basic-greylight);
     border: none;
 }
 
+.control-button,
+.control-button:focus{
+    transition: all 0.2s ease-out;
+}
 .control-button:hover,
 .control-button:focus{
     transform: scale(1.5);
-    transition: all 0.2s ease-out;
 }
 .control-button:active{
     opacity: 0.5;
@@ -550,10 +571,13 @@ color: var(--basic-greylight);
 .slide-controls .curent-slide {
     background-color:var(--basic-red);
 }
-.slide-control-button:hover,
+.slide-control-button,
 .slide-control-button:focus{
     transition: all 0.2s ease-out;
-    transform: scale(1.5);
+}
+.slide-control-button:hover,
+.slide-control-button:focus{
+    transform: scale(2);
 }
 .slide-control-button:active{
     opacity: 0.5;
@@ -583,10 +607,12 @@ color: var(--basic-greylight);
     line-height: 18px;
     text-transform: uppercase;
     grid-area: 2/1/3/2;
+}.offers-item a,
+.offers-item a:focus{
+    transition: all 0.3s ease-out;
 }
 .offers-item a:hover,
 .offers-item a:focus{
-    transition: all 0.3s ease-out;
     background-color: var(--special-lightgrey-opacity);
 }
 .offers-item a:active{
@@ -602,9 +628,12 @@ color: var(--basic-greylight);
 .offers-item .button{
     background-color: var(--basic-red);
 }
-.offers-item .button:hover,
+.offers-item .button,
 .offers-item .button:focus{
     transition: all 0.3s ease-out;
+}
+.offers-item .button:hover,
+.offers-item .button:focus{
     background-color:var(--special-like-my-blood-red);
 }
 .offers-item .button:active{
@@ -632,15 +661,16 @@ color: var(--basic-greylight);
     text-transform: uppercase;
     transform: rotate(45deg);
 }
-
 .button{
     background-color: var(--basic-red);
     text-transform: uppercase;
 }
-
+.button:focus,
+.button{
+    transition: all 0.3s ease-out;
+}
 .button:focus,
 .button:hover{
-    transition: all 0.3s ease-out;
     background-color:var(--special-like-my-blood-red);
 }
 .button:active{
@@ -722,17 +752,18 @@ grid-column: 1/-1;
     text-transform: uppercase;
     transform: rotate(45deg);
 }
-
-.goods-item:hover,
+.goods-item,
 .goods-item:focus{
     transition: all 0.2s ease-out;
-box-shadow:0 4px 20px 0 var(--special-border-grey);
+}
+.goods-item:hover,
+.goods-item:focus{
+    box-shadow:0 4px 20px 0 var(--special-border-grey);
 }
 .goods-item:hover .image-hover,
 .goods-item:focus .image-hover{
-  display: none;
+    display: none;
 }
-
 .goods-item a{
     padding: 0px 13px 2px 14px;
     text-decoration: none;
@@ -791,7 +822,6 @@ box-shadow:0 4px 20px 0 var(--special-border-grey);
     margin-left: 6px;
 }
 .goods-button{
-    display: inline-block;
     position: relative;
     width: 122px;
     height: 38px;
@@ -865,9 +895,12 @@ box-shadow:0 4px 20px 0 var(--special-border-grey);
     align-items: center;
     justify-content: center;
 }
-.brands-item:hover,
+.brands-item,
 .brands-item:focus{
     transition: all 0.2s ease-out;
+}
+.brands-item:hover,
+.brands-item:focus{
     box-shadow:0 4px 20px 0 var(--special-border-grey);
 }
 .brands-item:active{
@@ -956,7 +989,7 @@ box-shadow:0 4px 20px 0 var(--special-border-grey);
 }
 
 .slide-wraper{
-    display: grid;
+    display:none;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-area: 3/2/4/3;
@@ -979,9 +1012,6 @@ box-shadow:0 4px 20px 0 var(--special-border-grey);
     align-self: end;
     margin-right: -9px;
 }
-.hide{
-    display: none;
-}
 .show{
     display: grid;
 }
@@ -1001,8 +1031,11 @@ box-shadow:0 4px 20px 0 var(--special-border-grey);
 
 }
 .services-button:focus,
-.services-button:hover{
+.services-button{
     transition: all 0.3s ease-out;
+}
+.services-button:focus,
+.services-button:hover{
     font-size: 21px;
     line-height: 31px;
     color: var(--basic-white);
@@ -1118,14 +1151,14 @@ box-shadow:0 4px 20px 0 var(--special-border-grey);
 
 }
 .where-info .footer-logo{
-    display: inline-block;
+    display: block;
     box-sizing: border-box;
     box-shadow:0 5px 0 0 var(--special-red);
     background-color:var(--basic-red);
     width: 220px;
     height: 63px;
     text-align:center;
-    margin: 0 0 27px 0;
+    margin: 0 0 29px 0;
     padding-top: 0;
     text-decoration: none;
 }
@@ -1199,6 +1232,7 @@ text-decoration: none;
 }
 .developers>p{
     display: inline-block;
+    vertical-align: middle;
 }
 .developers p:last-child{
     margin:36px 14px 37px 48px;
@@ -1228,10 +1262,14 @@ text-decoration: none;
     text-decoration: none;
 
 }
-.social-logo:hover path:first-of-type,
+.social-logo path:first-of-type,
 .social-logo:focus path:first-of-type,
 .social-logo:active path:first-of-type{
     transition: all 0.3s ease-out;
+}
+.social-logo:hover path:first-of-type,
+.social-logo:focus path:first-of-type,
+.social-logo:active path:first-of-type{
     fill:var(--basic-red);
 }
 .modal{
@@ -1314,8 +1352,11 @@ text-decoration: none;
     border: none;
 }
 .modal-letter-button:focus,
-.modal-letter-button:hover{
+.modal-letter-button{
     transition: all 0.3s ease-out;
+}
+.modal-letter-button:focus,
+.modal-letter-button:hover{
     background-color:var(--special-like-my-blood-red);
 }
 .modal-letter-button:active{
@@ -1385,11 +1426,16 @@ text-decoration: none;
     left: 16px;
     bottom: 35px;
 }
+.account-wrapper .profile,
+.account-wrapper .profile:focus,
+.account-wrapper .login-out,
+.account-wrapper .login-out:focus{
+    transition: all 0.3s ease-out;
+}
 .account-wrapper .profile:hover,
 .account-wrapper .profile:focus,
 .account-wrapper .login-out:hover,
 .account-wrapper .login-out:focus{
-    transition: all 0.3s ease-out;
     opacity: 1;
 }
 
@@ -1434,9 +1480,12 @@ text-decoration: none;
     line-height: 18px;
 
 }
-.account-item a:hover,
+.account-item a,
 .account-item a:focus{
     transition: all 0.3s ease-out;
+}
+.account-item a:hover,
+.account-item a:focus{
     color: var(--basic-red);
 }
 .account-item a:active{
@@ -1828,11 +1877,16 @@ left: 135px;
     margin-right: 21px;
 }
 .sort-item .down:focus path,
+.sort-item .down path,
+.sort-item .up path,
+.sort-item .up:focus path{
+    transition: all 0.3s ease-out;
+}
+.sort-item .down:focus path,
 .sort-item .down:hover path,
 .sort-item .up:hover path,
 .sort-item .up:focus path{
-    transition: all 0.3s ease-out;
-fill: var(--basic-black);
+    fill: var(--basic-black);
 }
 .goods-list-catalog-wraper{
     display: grid;
@@ -1889,14 +1943,20 @@ fill: var(--basic-black);
     background-position: 0 0;
     opacity:0.3;
 }
-.catalog-button-buy:hover::before,
+.catalog-button-buy::before,
 .catalog-button-buy:focus::before{
     transition: all 0.3s ease-out;
+}
+.catalog-button-buy:hover::before,
+.catalog-button-buy:focus::before{
     opacity: 1;
+}
+.catalog-button-buy,
+.catalog-button-buy:focus{
+    transition: all 0.3s ease-out;
 }
 .catalog-button-buy:hover,
 .catalog-button-buy:focus{
-    transition: all 0.3s ease-out;
     background-color:var(--special-green);
 }
 .catalog-button-buy:active{
@@ -1914,9 +1974,12 @@ fill: var(--basic-black);
     border-radius: 2px;
     margin-left: 3px;
 }
-.catalog-button-bookmark:hover,
+.catalog-button-bookmark,
 .catalog-button-bookmark:focus{
     transition: all 0.3s ease-out;
+}
+.catalog-button-bookmark:hover,
+.catalog-button-bookmark:focus{
     border:3px solid var(--basic-grey);
 }
 .catalog-button-bookmark:active{
@@ -2032,8 +2095,11 @@ fill: var(--basic-black);
     margin-right: 10px;
 }
 .modal-goods .confirm:focus,
-.modal-goods .confirm:hover{
+.modal-goods .confirm{
     transition: all 0.3s ease-out;
+}
+.modal-goods .confirm:focus,
+.modal-goods .confirm:hover{
     background-color:var(--special-like-my-blood-red);
 }
 .modal-goods .confirm:active{
@@ -2048,9 +2114,12 @@ fill: var(--basic-black);
     border: none;
     padding: 11px 31px 9px 32px;
 }
-.modal-goods .next:hover,
+.modal-goods .next,
 .modal-goods .next:focus{
     transition: all 0.3s ease-out;
+}
+.modal-goods .next:hover,
+.modal-goods .next:focus{
     color: var(--basic-red);
 }
 .modal-goods .next:active{

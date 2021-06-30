@@ -20,15 +20,13 @@ document.getElementById('tabs').onclick= function (event) {
 function hideTabsContent(a) {
   for (let i=a; i<tabContent.length; i++) {
       tabContent[i].classList.remove('show');
-      tabContent[i].classList.add("hide");
       tab[i].classList.remove('services-button-active');
   }
 }
 function showTabsContent(b){
-  if (tabContent[b].classList.contains('hide')) {
+  if (!tabContent[b].classList.contains('show')) {
       hideTabsContent(0);
       tab[b].classList.add('services-button-active');
-      tabContent[b].classList.remove('hide');
       tabContent[b].classList.add('show');
   }
 }
