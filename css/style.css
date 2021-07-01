@@ -81,7 +81,6 @@
     margin-bottom: 21px;
 }
 .search-form{
-    position: relative;
     margin: 0;
     padding: 0;
     border: none;
@@ -109,6 +108,9 @@
 }
 .search::placeholder{
     color:var(--basic-white)
+}
+.input-wraper{
+  position: relative;
 }
 .search-picture{
     position: absolute;
@@ -155,18 +157,16 @@
 .user-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: start;
     margin: 0;
     padding: 0;
     list-style: none;
     align-items: center;
 
 }
-
 .user-item a{
+    min-width: 150px;
     box-sizing: border-box;
-    width: 150px;
-    height: 42px;
     display: block;
     margin: 0;
     color: var(--basic-white);
@@ -174,7 +174,7 @@
 }
 
 .user-item .bookmark{
-    padding: 9px 0px 9px 43px;
+    padding: 9px 10px 9px 43px;
     position: relative;
 }
 .user-list .full-bookmark{
@@ -206,7 +206,7 @@
     opacity: 0.3;
 }
 .cart{
-    padding: 9px 0px 9px 49px;
+    padding: 9px 10px 9px 49px;
     position: relative;
 }
 .user-list .full-cart{
@@ -237,7 +237,7 @@
 }
 
 .user-item:last-child a{
-    padding: 9px 0px 9px 19px;
+    padding: 9px 16px 9px 19px;
     background-color: var(--basic-green);
 }
 .user-item:last-child a,
@@ -894,6 +894,12 @@ grid-column: 1/-1;
     border: 1px solid var(--special-border-grey);
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+.brands-item img{
+    width: 204px;
+    object-fit: contain;
+    background-color: var(--basic-white);
 }
 .brands-item,
 .brands-item:focus{
@@ -1021,7 +1027,9 @@ grid-column: 1/-1;
     height: 61px;
     font-size: 21px;
     line-height: 31px;
+    font-weight: 700;
     text-align: start;
+    padding-top: 5px;
     padding-left: 22px;
     color: var(--basic-white);
     background-color:var(--basic-grey);
@@ -2061,8 +2069,19 @@ left: 135px;
     text-align: center;
 }
 
+.modal--show-letter{
+    display: block;
+    animation-name: expansion;
+    animation-duration: 0.7s;
+}
 .modal--show{
     display: block;
+    animation-name: opacity;
+    animation-duration: 0.7s;
+}
+.modal--error{
+    animation-name: shake;
+    animation-duration: 0.5s;
 }
 .modal-goods h2{
     position: relative;
@@ -2129,4 +2148,46 @@ left: 135px;
     display: flex;
     padding: 37px 112px 37px 111px;
     background-color: var(--basic-background);
+}
+@keyframes expansion{
+  from{
+    transform: scale(0);
+  }
+  70%{
+    transform: scale(1.2);
+  }
+
+  to{
+    transform: scale(1);
+  }
+}
+
+@keyframes opacity{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
