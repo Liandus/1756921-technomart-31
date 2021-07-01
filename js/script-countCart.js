@@ -4,7 +4,8 @@ let counterC=document.querySelector('.cart-number')
 let count=0;
 for (let i = 0; i< addCarts.length; i++) {
   addCart= addCarts[i];
-addCart.addEventListener('click', function () {
+addCart.addEventListener('click', function (evt) {
+  evt.preventDefault();
   count++;
   counterC.textContent=count;
   if (count>0)
