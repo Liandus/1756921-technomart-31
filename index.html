@@ -9,7 +9,8 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
   </head>
   <body class="page-body">
 <header class="header">
@@ -107,31 +108,28 @@
             <h3 class="offer-name">Доставка</h3>
             <a class="offers-button" href="#">Бесплатно</a>
           </li>
-          <li class="offers-item offers-slide">
-            <h3 class="offer-name slide-name">Дрели</h3>
-            <p class="slide-description">Соседям на радость</p>
-            <div class="next-previos-buttons">
-              <button class="control-button previos" type="button" aria-label="Предыдущий слайд"></button>
-              <button class="control-button next" type="button" aria-label="Следущий слайд"></button>
+          <li class="slider-item">
+            <div class="offers-slider swiper-container">
+              <div class="offers-slider-wrapper swiper-wrapper">
+                <div class="offers-slide swiper-slide">
+                  <h3 class="offer-name slide-name">Дрели</h3>
+                  <p class="slide-description">Соседям на радость</p>
+                  <a class="button slide-button" href="catalog.html">Открыть каталог</a>
+                  <img src="img/manwithdrill.jpg" width="620" height="266" alt="Мужчина с дрелью в руках">
+                </div>
+                <div class="offers-slide swiper-slide">
+                  <h3 class="offer-name slide-name">Перфораторы</h3>
+                  <p class="slide-description">Настоящие мужские игрушки</p>
+                  <a class="button slide-button" href="catalog.html">Открыть каталог</a>
+                  <img src="img/manwithperforator.jpg" width="620" height="266" alt="Мужчина с перфоратором в руках">
+                </div>
+              </div>
+              <div class="pagination-wrapper">
+               <div class="offers-slide-pagination swiper-pagination"></div>
+              </div>
+               <div class="offers-slide-prev swiper-button-prev"></div>
+              <div class="offers-slide-next swiper-button-next"></div>
             </div>
-            <div class="slide-controls">
-             <button class="slide-control-button first-slide curent-slide" type="button" aria-label="Первый слайд"></button>
-             <button class="slide-control-button second-slide" type="button" aria-label="Второй слайд"></button>
-            </div>
-            <a class="button slide-button" href="catalog.html">Открыть каталог</a>
-           </li>
-          <li class="offers-item offers-slide curent-offers-slide">
-            <h3 class="offer-name slide-name">Перфораторы</h3>
-            <p class="slide-description">Настоящие мужские игрушки</p>
-            <div class="next-previos-buttons">
-              <button class="control-button previos" type="button" aria-label="Предыдущий слайд"></button>
-              <button class="control-button next" type="button" aria-label="Следущий слайд"></button>
-            </div>
-            <div class="slide-controls">
-              <button class="slide-control-button first-slide " type="button" aria-label="Первый слайд"></button>
-              <button class="slide-control-button second-slide curent-slide" type="button" aria-label="Второй слайд"></button>
-             </div>
-            <a class="button slide-button" href="catalog.html">Открыть каталог</a>
           </li>
       </ul>
     </section>
@@ -334,7 +332,7 @@
     <li class="delivery-item">Автотрейдинг</li>
     <li class="delivery-item">ЖелДорЭкспедиция</li>
   </ul>
-  <a class="button" href="#">Подробнее о компании</a>
+  <a class="about-company-button button" href="#">Подробнее о компании</a>
 </div>
 <div class="map-wraper">
   <h2>Контакты</h2>
@@ -342,12 +340,12 @@
     Вы можете забрать товар сами,<br>
     заехав в наш офис:
   </p>
-  <a class="open-map-button" href="#">
+  <a class="open-map-button" href="https://goo.gl/maps/pVjQvx4nNa7kTrSs7">
   <img src="img/map.png" width="300" height="158" alt="Адрес офиса на карте:г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
   </a>
-  <button class="button open-form-button" type="button">
+  <a class="open-form-button" href="writeus.html">
     Заблудились? Напишите нам!
-  </button>
+  </a>
 </div>
 </section>
 <footer class="footer">
@@ -438,12 +436,13 @@
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8226079613203!2d30.315733335952775!3d59.968265989384356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1624131154128!5m2!1sru!2sru" width="940" height="439" allowfullscreen title=" Адрес офиса на карте:г. Санкт-Петербург, наб. Реки Карповки, 5 лит П"></iframe>
   <button class="close-button" type="button"></button>
 </section>
-<script src="js/script-sercvicesslide.js"></script>
-<script src="js/script-countboookmark.js"></script>
-<script src="js/script-magnifier.js"></script>
-<script src="js/script-offersslide.js"></script>
-<script src="js/script-map.js"></script>
-<script src="js/script-letter.js"></script>
-<script src="js/script-countcart.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script-sercvicesslide.min.js"></script>
+<script src="js/script-countboookmark.min.js"></script>
+<script src="js/script-magnifier.min.js"></script>
+<script src="js/script-offersslide.min.js"></script>
+<script src="js/script-map.min.js"></script>
+<script src="js/script-letter.min.js"></script>
+<script src="js/script-countcart.min.js"></script>
   </body>
 </html>

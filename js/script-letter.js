@@ -14,7 +14,8 @@ try {
   isStorageSupport = false;
 }
 
-openLetter.addEventListener('click', function(){
+openLetter.addEventListener('click', function(evt){
+    evt.preventDefault();
     popupLetter.classList.add('modal--show-letter')
     if (storage) {
       userEmail.value = storage;

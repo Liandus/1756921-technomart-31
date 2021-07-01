@@ -387,7 +387,7 @@ color: var(--basic-greylight);
 .navigation-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:flex-start;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -398,8 +398,8 @@ color: var(--basic-greylight);
     box-sizing:border-box;
     padding-top: 16px;
     padding-bottom: 15px;
-    padding-left: 25px;
-    padding-right: 30px;
+    padding-left: 28px;
+    padding-right: 28px;
     text-decoration: none;
     color: var(--basic-white);
 }
@@ -472,79 +472,66 @@ color: var(--basic-greylight);
     background-repeat: no-repeat;
     background-position: 196px 26px;
 }
-.offers-item:nth-child(6){
-    position: relative;
+.slider-item{
     grid-column: 1/3;
     grid-row: 2/4;
-    width: 620px;
-    height: 266px;
-    background-image: url(../img/manwithdrill.jpg);
-    background-repeat: no-repeat;
 }
-.offers-item:nth-child(7){
+.swiper-container{
+    width: 620px;
+    height:266px;
+}
+.offers-slider .swiper-button-next,
+.offers-slider .swiper-button-prev{
+  color:var(--basic-white);
+}
+.offers-slider .swiper-button-next{
+  right: 19px;
+  top: 142px;
+  left: auto;
+}
+.offers-slider .swiper-button-prev{
+  left: 23px;
+  right: auto;
+  top: 142px;
+}
+
+.offers-slider .pagination-wrapper .offers-slide-pagination{
+    bottom: 29px;
+    left: 270px;
+    width: 80px;
+}
+.offers-slider .swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    background-color: var(--basic-white);
+    border: 2px solid var(--basic-white);
+    border-radius: 50%;
+    opacity: 1;
+}
+.offers-slider .swiper-pagination-bullet-active{
+    background-color: var(--basic-red);
+}
+.offers-slide-wrapper .offers-slide{
     position: relative;
-    grid-column: 1/3;
-    grid-row: 2/4;
-    width: 620px;
-    height: 266px;
-    background-image: url(../img/manwithperforator.jpg);
-    background-repeat: no-repeat;
 }
-.offers-item:nth-child(6) h3,
-.offers-item:nth-child(7) h3{
-    margin: 23px 0 5px 24px;
+.offers-slide .slide-name{
+    position: absolute;
+    top: -13px;
+    left: 24px;
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
 }
-
-.offers-slide{
-    display: none;
-}
-.curent-offers-slide{
-    display: block;
-}
-.next-previos-buttons{
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
-    margin: 0 20px 44px 24px;
-}
-.control-button{
-    width: 22px;
-    height: 40px;
-    cursor: pointer;
-    background-color: transparent;
-    background-image:url(..//img/icon-left.svg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    border: none;
-}
-
-.control-button,
-.control-button:focus{
-    transition: all 0.2s ease-out;
-}
-.control-button:hover,
-.control-button:focus{
-    transform: scale(1.5);
-}
-.control-button:active{
-    opacity: 0.5;
-}
-.next-previos-buttons .next{
-    transform: rotate(180deg);
-    }
-.next-previos-buttons .next:hover,
-.next-previos-buttons .next:focus{
-    transition: all 0.2s ease-out;
-    transform: scale(1.5) rotate(180deg);
-}
 .offers-slide .slide-description{
-    margin: 0 0 35px 24px;
+    position: absolute;
+    top: 46px;
+    left: 23px;
 }
 .offers-slide .slide-button{
+    position: absolute;
+    bottom: 27px;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -552,35 +539,6 @@ color: var(--basic-greylight);
     margin: 0 0 0 24px;
     color: var(--basic-white);
     padding: 11px 46px 9px 46px;
-}
-.slide-controls{
-    position: absolute;
-    left: 47.5%;
-    bottom: 32px;
-}
-.slide-control-button{
-    padding: 0;
-    width: 10px;
-    height: 10px;
-    background-color: var(--basic-white);
-    border: 2px solid var(--basic-white);
-    border-radius:50%;
-    cursor: pointer;
-    margin-right: 6px;
-}
-.slide-controls .curent-slide {
-    background-color:var(--basic-red);
-}
-.slide-control-button,
-.slide-control-button:focus{
-    transition: all 0.2s ease-out;
-}
-.slide-control-button:hover,
-.slide-control-button:focus{
-    transform: scale(2);
-}
-.slide-control-button:active{
-    opacity: 0.5;
 }
 .offers-item-decoration{
     display: block;
@@ -591,7 +549,6 @@ color: var(--basic-greylight);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content 1fr;
 }
-
 .offers-item .offers-button{
     margin: 0 0 0 22px;
     display: block;
@@ -607,7 +564,8 @@ color: var(--basic-greylight);
     line-height: 18px;
     text-transform: uppercase;
     grid-area: 2/1/3/2;
-}.offers-item a,
+}
+.offers-item a,
 .offers-item a:focus{
     transition: all 0.3s ease-out;
 }
@@ -683,7 +641,7 @@ color: var(--basic-greylight);
 }
 .back{
     background-color:var(--special-background);
-grid-column: 1/-1;
+    grid-column: 1/-1;
 }
 .popular-back{
     display: flex;
@@ -1069,7 +1027,7 @@ grid-column: 1/-1;
     column-gap: 179px;
     width: 940px;
     padding: 0 10px;
-    margin:0 auto 70px auto;
+    margin:0 auto 77px auto;
 }
 .map-wraper{
    justify-self: end;
@@ -1093,7 +1051,7 @@ grid-column: 1/-1;
 .about-company p:first-of-type{
     margin-bottom: 27px;
  }
-.about-company a{
+.about-company .about-company-button{
     font-size: 14px;
     line-height: 18px;
     padding: 11px 40px 9px 40px;
@@ -1101,16 +1059,29 @@ grid-column: 1/-1;
     text-decoration: none;
     color: var(--basic-white);
 }
-.about-company button{
+.about-company .open-form-button{
     color: var(--basic-white);
     border: none;
-    width: 300px;
     text-align: center;
     font-size: 14px;
     line-height: 18px;
+    text-decoration: none;
+    background-color: var(--basic-red);
     text-transform: uppercase;
-    padding:10px 0 9px 0;
+    padding:10px 61px 9px 61px;
     cursor: pointer;
+    margin: 0;
+}
+.open-form-button:focus,
+.button{
+    transition: all 0.3s ease-out;
+}
+.open-form-button:focus,
+.open-form-button:hover{
+    background-color:var(--special-like-my-blood-red);
+}
+.open-form-button:active{
+    background-color: var(--special-red);
 }
 .delivery-list{
     margin: 0 0 28px 0;
@@ -1140,7 +1111,7 @@ grid-column: 1/-1;
 .map-wraper img{
     width: 300px;
     height: 158px;
-    margin: 0 0 21px 0;
+    margin: 0 0 27px 0;
 }
 .map-wraper .open-map-button{
     margin: 0;

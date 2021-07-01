@@ -8,7 +8,8 @@ for (let i = 0; i < goods.length; i++) {
 
   let openGoodsInCart=good.querySelector('.catalog-button-buy');
 
-openGoodsInCart.addEventListener('click', function(){
+openGoodsInCart.addEventListener('click', function(evt){
+    evt.preventDefault();
     popupGoodsInCart.classList.add('modal--show')
 });
 
