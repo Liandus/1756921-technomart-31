@@ -855,6 +855,8 @@ color: var(--basic-greylight);
     overflow: hidden;
 }
 .brands-item img{
+    width: 204px;
+    object-fit: contain;
     background-color: var(--basic-white);
 }
 .brands-item,
