@@ -1289,6 +1289,7 @@ text-decoration: none;
     border:2px solid var(--basic-greylight);
     border-radius: 2px;
     margin: 11px 0 13px 0;
+    padding-left: 12px;
 }
 
 .letter-form textarea{
@@ -1299,7 +1300,7 @@ text-decoration: none;
     border-radius: 2px;
     margin-top: 11px;
     margin-bottom: 74px;
-
+    padding-left: 12px;
 }
 .letter-form .user-comment-cell{
     width: 460px;
@@ -1318,7 +1319,6 @@ text-decoration: none;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
-    padding-left: 12px;
 }
 .modal-letter-button{
     padding: 11px 199px 9px 199px;
@@ -1685,6 +1685,7 @@ left: 135px;
     left: -35px;
     border: 3px solid var(--basic-greylight);
     border-radius:2px;
+    opacity: 0.9;
 }
 
 .brands-change-input:hover + label::before,
@@ -1701,7 +1702,7 @@ left: 135px;
     background-image: url(..//img/checked.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
-
+    opacity: 0.9;
 }
 .brands-change-input:checked:hover + label::before,
 .brands-change-input:checked:focus + label::before{
@@ -1709,9 +1710,10 @@ left: 135px;
 }
 .brands-change-input:checked:hover + label::after,
 .brands-change-input:checked:focus + label::after{
-    background-image: url(..//img/checked-hover.svg);
-
+  opacity: 1;
 }
+
+
 .brands-change-input:disabled + label::before{
    opacity: 0.4;
 }
@@ -1733,6 +1735,8 @@ left: 135px;
     width: 25px;
     height: 25px;
     left: -33px;
+    top: 50%;
+    transform: translateY(-50%);
     border: 5px solid var(--basic-greylight);
     border-radius:50%;
 }
@@ -1742,11 +1746,11 @@ left: 135px;
     box-sizing: border-box;
     width: 8px;
     height: 8px;
-    left: -24.5px;
-    top: 6px;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: var(--basic-greylight);
     border-radius:50%;
-
 }
 .power-change-input:hover + label::before,
 .power-change-input:focus + label::before{
@@ -1804,11 +1808,9 @@ left: 135px;
 }
 .sort-list .sort-item:nth-child(2){
     margin-right: 65px;
-
 }
 .sort-list .sort-item:nth-child(3){
     margin-right: 46px;
-
 }
 .sort-item .not-active-sort{
     text-decoration: none;
