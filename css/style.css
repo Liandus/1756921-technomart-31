@@ -2024,9 +2024,9 @@
 .power-change-input:checked+label::after {
   position: absolute;
   content: '';
-  width: 8px;
-  height: 8px;
-  left: -26px;
+  width: 9px;
+  height: 9px;
+  left: -27px;
   top: 57%;
   transform: translateY(-50%);
   background-color: var(--basic-greylight);
