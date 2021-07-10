@@ -6,7 +6,8 @@ for (let i= 0; i <addBookmarks.length; i++) {
   addBookmark= addBookmarks[i];
 
 
-addBookmark.addEventListener('click', function () {
+addBookmark.addEventListener('click', function (evt) {
+  evt.preventDefault();
   counter++;
   counterB.textContent=counter;
   if (counter>0)
