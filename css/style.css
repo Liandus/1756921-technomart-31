@@ -602,7 +602,7 @@
 }
 
 .offers-slide img {
-  background-color: var(--special-yellow);
+  background-color: var(--special-grey);
   z-index: -1;
   position: absolute;
 }
@@ -1937,7 +1937,7 @@
   background-color: var(--special-grey);
 }
 
-.field label {
+.field .label-catalog {
   position: relative;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
